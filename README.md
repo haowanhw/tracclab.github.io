@@ -28,7 +28,7 @@ The educational histories, interests, and hobbies are fictional layout samples. 
 To update a profile, edit the name and paragraph inside its `team-member-content` element in `index.html`. When a portrait is available, add it to `assets/` and replace the blank `div.team-photo` with:
 
 ```html
-<img class="team-photo" src="assets/member-name.jpg" alt="FirstName LastName" width="112" height="140" loading="lazy">
+<img class="team-photo" src="assets/member-name.jpg" alt="FirstName LastName" width="144" height="180" loading="lazy">
 ```
 
 Duplicate a `team-member` article within the relevant `team-members` container to add more members. Names, biographies, and portraits are static HTML; no JavaScript change is needed.
