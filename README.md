@@ -1,6 +1,6 @@
 # TRACC LAB
 
-English-language research lab website for Junqiang Zhao at the University of Rochester.
+Research lab website for Junqiang Zhao at the University of Rochester.
 
 ## Publish on GitHub Pages
 
