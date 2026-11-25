@@ -1,0 +1,194 @@
+{
+  "name": "TRACC Lab",
+  "full_name": "Translating Research into Action in Cancer Care",
+  "mission": "The TRACC Lab advances the implementation of evidence-based cancer screening and supportive care in real-world clinical settings. Our goal is to help ensure that effective cancer care reaches the people and communities who need it.",
+  "goal": "Translate evidence-based recommendations on cancer screening and supportive cancer care into routine clinical practice.",
+  "email": "junqiang_zhao@urmc.rochester.edu",
+  "scholar": "https://scholar.google.com/citations?user=jrsInP4AAAAJ&hl=en",
+  "people": [
+    {
+      "name": "Junqiang Zhao",
+      "degree": "PhD",
+      "role": "Principal Investigator",
+      "group": "pi",
+      "photo": "assets/junqiang-zhao.jpg",
+      "bio": [
+        "Dr. Junqiang Zhao is an Assistant Professor in the Supportive Care in Cancer Division, Department of Surgery at the University of Rochester Medical Center and an Associate Researcher at the Wilmot Cancer Institute. He also holds a status appointment as an Assistant Professor at the Dalla Lana School of Public Health, University of Toronto.",
+        "Dr. Zhao’s research expertise spans implementation science and shared decision-making. He currently serves as Vice Chair of the Contextual Drivers Action Group within the Consortium for Cancer Implementation Science. He is also an Editorial Board Member for Implementation Science Communications and a Junior Editorial Board Member for the Asian Pacific Journal of Oncology Nursing. He leads the TRACC (Translating Research into Action in Cancer Care) team, which focuses on applying implementation science to improve cancer screening and supportive cancer care. Methodologically, his research specializes in realist methodology and mixed-methods research.",
+        "Prior to joining the University of Rochester in 2025, Dr. Zhao was an Implementation Scientist at the Waypoint Research Institute. He earned his PhD in Nursing from the University of Ottawa, where he received systematic training in implementation science at the Centre for Implementation Research, Ottawa Hospital Research Institute."
+      ]
+    },
+    {
+      "name": "Fernando Martinez",
+      "role": "Clinical Trials Project Manager",
+      "group": "management",
+      "photo": null,
+      "bio": [
+        "Fernando is a University of Rochester alumnus who has been working in research at the University of Rochester Medical Center for the past five years. His experience spans inpatient, outpatient, and community-based research, investigational drug and treatment trials, and research involving underserved and high-risk populations. He is passionate about improving health outcomes for vulnerable populations and ultimately helping bridge the gap between communities and healthcare."
+      ]
+    },
+    {
+      "name": "Yutong Xu",
+      "degree": "MS",
+      "role": "Research Assistant · Epidemiology",
+      "group": "graduate",
+      "photo": "assets/yutong-xu.jpg",
+      "bio": [
+        "Yutong Xu is a PhD student in Epidemiology at the University of Rochester. She holds a master’s degree in Biostatistics and a bachelor’s degree in Mathematics. Her research interests include cancer research, implementation science, infectious diseases, and health disparities, with a focus on applying quantitative methods to understand and improve health outcomes. Her previous research experience includes oncology clinical trials, cancer screening implementation, and health disparities among underserved populations."
+      ]
+    },
+    {
+      "name": "Yufei Jia",
+      "role": "Research Assistant · PhD Candidate",
+      "group": "graduate",
+      "photo": null,
+      "bio": [
+        "Yufei Jia is a PhD candidate in the Health Services Research and Policy Program at the University of Rochester Medical Center. She is a mixed-methods researcher with interests in cancer care and screening, aging and long-term care, and health economics. Her work focuses on how health policies and systems shape healthcare access, affordability, and equity."
+      ]
+    },
+    {
+      "name": "Zijun Xie",
+      "role": "Research Assistant · Epidemiology",
+      "group": "graduate",
+      "photo": "assets/zijun-xie.jpg",
+      "bio": [
+        "Zijun is a second-year PhD student in the Epidemiology program at the University of Rochester Medical Center. She received her Master of Science in Epidemiology from Johns Hopkins University in 2025. Her research primarily focuses on environmental exposures, particularly chemical exposures. Her current work also explores how health policies and artificial intelligence (AI) models influence cancer treatment and care delivery in real-world clinical settings."
+      ]
+    },
+    {
+      "name": "Jingqiu Zhang",
+      "role": "Research Assistant · Master's Student",
+      "group": "graduate",
+      "photo": null,
+      "bio": [
+        "Jingqiu Zhang is currently a master's student in the Health Services Research and Policy program. She is a mixed-methods public health policy researcher with a focus on chronic diseases among older adults. Her recent work centers on cancer prehabilitation, particularly for vulnerable older populations—as well as long-term care research in nursing homes. Before beginning her current master's studies, Jingqiu earned a master's degree from Harbin Medical University and completed a two-year research internship in the Department of Cost and Pricing Research at the China National Health Development Research Center (CNHDRC). Following her internship, she worked in the public medical insurance department at the First Affiliated Hospital, Zhejiang University School of Medicine, where Jingqiu was responsible for DRG-based data analysis and insurance reviews for cancer medications."
+      ]
+    },
+    {
+      "name": "Yousef Ashour",
+      "role": "Undergraduate Research Assistant",
+      "group": "undergraduate",
+      "photo": null,
+      "bio": [
+        "Yousef is a second-year undergraduate student at the University of Rochester studying Biomedical Engineering. He enjoys research topics such as translational research and biomedical research."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "screening-decisions",
+      "area": "screening",
+      "title": "Understanding the decisional needs for anal cancer screening among high-risk populations",
+      "summary": "Understanding screening knowledge, values, preferences, and decision-making needs across four populations at elevated risk for anal cancer, to inform patient-centered decision aids.",
+      "framework": "Ottawa Decision Support Framework",
+      "methods": "Convergent mixed methods",
+      "paragraphs": [
+        "This convergent mixed-methods study aims to understand the decisional needs of four populations at elevated risk for anal cancer: people with HIV (PWH), men who have sex with men (MSM), individuals with a history of HPV-related gynecologic malignancies or high-grade dysplasia, and solid organ transplant recipients. Guided by the Ottawa Decision Support Framework, the study explores participants’ knowledge of anal cancer and screening, perceived risk, personal values, preferences, social support, and decisional conflict. Although anal cancer screening is increasingly recommended for high-risk populations, barriers such as limited awareness, stigma, and uncertainty regarding screening benefits and potential harms complicate decision-making. The findings provide a foundation for developing patient-centered decision aids that support informed, value-concordant decisions regarding anal cancer screening.",
+        "The study employs a convergent mixed-methods design, collecting quantitative survey data and qualitative interview data in parallel. Approximately 260 participants complete a brief survey assessing sociodemographic characteristics, screening knowledge, decision stage, values, social support, decisional conflict, and preferences for a future decision aid. A purposive subset of approximately 60 participants participates in semi-structured interviews exploring their experiences, knowledge gaps, decision-making challenges, and perspectives on screening, with additional attention to population-specific concerns. Survey data are analyzed using descriptive statistics, while interview transcripts undergo thematic analysis guided by the Ottawa Decision Support Framework. Findings are integrated at the aggregate level to provide a comprehensive understanding of decisional needs across the four populations. The results directly inform the content, structure, framing, and delivery format of future anal cancer screening decision aid prototypes."
+      ]
+    },
+    {
+      "id": "precancer-treatment",
+      "area": "screening",
+      "title": "Understanding barriers to anal precancer treatment",
+      "summary": "Examining patient and healthcare provider perspectives on barriers to completing recommended treatment for anal high-grade squamous intraepithelial lesions, with the aim of informing targeted implementation strategies.",
+      "framework": "COM-B model · Behavior Change Wheel",
+      "methods": "Convergent mixed methods",
+      "paragraphs": [
+        "This convergent mixed-methods study aims to identify barriers that prevent patients diagnosed with anal high-grade squamous intraepithelial lesions (HSIL), a precancerous condition, from completing recommended treatment. Guided by the Capability, Opportunity, Motivation–Behavior (COM-B) model and the Behavior Change Wheel (BCW), the study explores patient and healthcare provider perspectives on factors influencing treatment adherence. Despite evidence demonstrating that treatment of anal HSIL significantly reduces the risk of progression to anal cancer, adherence to recommended treatment and follow-up remains suboptimal. The study examines individual, healthcare-related, and contextual barriers to treatment completion, as well as potential strategies to improve patient engagement and retention in care. Findings will inform the development of targeted strategies to improve adherence to anal precancer treatment and reduce the risk of progression to invasive anal cancer.",
+        "The study employs a convergent mixed-methods design, collecting quantitative survey data and qualitative interview data in parallel. Approximately 35 patients with confirmed anal HSIL and 10 healthcare providers involved in anal HSIL care complete brief electronic surveys assessing treatment completion, perceived barriers to adherence, and potential strategies for improvement. A purposive subset of approximately 10 patients who have not initiated recommended treatment within 90 days of diagnosis and five healthcare providers participate in semi-structured interviews to further explore their experiences and perspectives. Survey data are analyzed using descriptive statistics, while interview transcripts undergo reflective thematic analysis guided by the COM-B model. Findings from the patient and provider surveys and interviews are integrated during analysis to provide a comprehensive understanding of barriers to treatment adherence across individual and healthcare system levels. The results will inform the development of targeted interventions and strategies to improve adherence to recommended anal precancer treatment and support timely, appropriate care."
+      ]
+    },
+    {
+      "id": "living-knowledge-base",
+      "area": "ai",
+      "title": "Building a living, ontology-informed and large language model-assisted knowledge base for cancer screening implementation",
+      "summary": "Developing a continuously updated, structured resource that helps researchers and healthcare professionals find and compare cancer screening implementation strategies for their settings.",
+      "framework": "Ontology engineering · Human–LLM collaboration",
+      "methods": "Evidence synthesis",
+      "link": "https://f1000research.com/articles/15-1253",
+      "paragraphs": [
+        "This project aims to develop a living, ontology-informed, and large language model (LLM)-assisted knowledge base to improve the accessibility, organization, and application of evidence on cancer screening implementation. Although numerous implementation strategies have been evaluated to improve cancer screening uptake, the evidence remains fragmented, inconsistently reported, and difficult to translate into clinical practice. The project addresses this gap by creating a continuously updated, structured, and computer-readable resource that organizes implementation evidence across cancer types, populations, and healthcare contexts. The knowledge base supports evidence-informed decision-making by enabling researchers and healthcare professionals to identify, compare, and retrieve implementation strategies that are relevant to their specific clinical and organizational settings.",
+        "The project employs a human-LLM collaborative workflow to develop and maintain the knowledge base. The research team develops a cancer screening implementation ontology, building on the Behavior Change Intervention Ontology, to standardize the representation of screening pathways, implementation determinants, strategies, and outcomes. Guided by Cochrane Effective Practice and Organization of Care methods, the team systematically identifies randomized controlled trials evaluating cancer screening implementation strategies across PubMed, EMBASE, CINAHL, and PsycINFO. Eligible studies undergo structured data extraction and standardization using the ontology, with LLM-assisted processes supported by source verification and expert review. The resulting interactive knowledge base enables evidence visualization, synthesis, and structured comparison, while ongoing updates and quality evaluations support its continued development. Ultimately, this resource provides an evidence infrastructure for advancing precision implementation science and developing future context-sensitive decision-support applications."
+      ]
+    }
+  ],
+  "expertise": [
+    {
+      "title": "Implementation science",
+      "items": [
+        "Select implementation theories, models, and frameworks",
+        "Design implementation studies, including trials",
+        "Examine implementation barriers",
+        "Determine implementation outcomes"
+      ]
+    },
+    {
+      "title": "Patient decision support",
+      "items": [
+        "Assess patient decisional needs",
+        "Develop patient decision aids",
+        "Evaluate decision support outcomes"
+      ]
+    },
+    {
+      "title": "Research methods",
+      "items": [
+        "Realist inquiry",
+        "Qualitative studies",
+        "Mixed methods"
+      ]
+    }
+  ],
+  "areas": [
+    {
+      "id": "screening",
+      "title": "Cancer screening",
+      "label": "Implementation research in cancer screening",
+      "description": "We study strategies to improve the implementation of evidence-based cancer screening and prevention, with a particular focus on anal cancer screening among high-risk populations. Our work addresses barriers to screening, integration into routine clinical care, stigma reduction, and follow-up treatment to improve prevention and early detection.",
+      "focus": [
+        "Improve screening among high-risk populations",
+        "Integrate anal cancer screening into routine HIV care",
+        "Develop stigma-responsive screening strategies",
+        "Improve treatment adherence for anal precancerous lesions"
+      ],
+      "short": "Anal cancer screening, patient decision support, stigma-responsive strategies, and treatment adherence."
+    },
+    {
+      "id": "supportive-care",
+      "title": "Supportive cancer care",
+      "label": "Implementation research in supportive cancer care",
+      "description": "We investigate strategies to improve the delivery of evidence-based supportive care in oncology. Our work focuses on improving uptake of genetic counseling and testing in community oncology and implementing serious illness conversations in geriatric oncology to support patient-centered care.",
+      "short": "Genetic counseling and testing in community oncology, and serious illness conversations in geriatric oncology."
+    },
+    {
+      "id": "ai",
+      "title": "AI and decision support",
+      "label": "AI and decision support",
+      "description": "We explore the use of artificial intelligence, predictive modeling, and clinical decision support to advance cancer screening implementation. Our research focuses on organizing implementation evidence, understanding screening behaviors, and developing data-driven tools to inform clinical decisions and implementation strategies.",
+      "focus": [
+        "Build an AI-assisted, evidence-informed database of cancer screening implementation research",
+        "Develop models to predict screening behaviors and inform implementation strategies"
+      ],
+      "short": "A living implementation knowledge base, predictive modeling, and tools to support evidence-informed decisions."
+    },
+    {
+      "id": "policy",
+      "title": "Cancer screening policy",
+      "label": "Cancer screening policy",
+      "description": "We examine how cancer screening policies are implemented across healthcare settings and populations. Using publicly available datasets, we identify implementation gaps, evaluate patterns in screening delivery, and generate evidence to inform policy and improve access to recommended screening services.",
+      "short": "Understanding implementation gaps and patterns in screening delivery using publicly available datasets."
+    }
+  ],
+  "future": [
+    "Conduct randomized implementation trials testing implementation strategies for cancer screening and care",
+    "Examine sustainability and scalability of evidence-based cancer screening and care program implementation",
+    "Develop a decision support system and a prediction model for cancer screening strategies"
+  ],
+  "news": {
+    "title": "Yufei Jia presents at the Department of Surgery Scientific Symposium 2026",
+    "year": "2026",
+    "photo": "assets/yufei-symposium-2026.jpg",
+    "caption": "Yufei Jia at the Department of Surgery Scientific Symposium, 2026."
+  }
+}
