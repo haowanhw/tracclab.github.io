@@ -64,8 +64,7 @@ def home():
     research = ''.join(f'<article class="research-preview"><h3><a href="research.html#{e(x["id"])}">{e(x["title"])}</a></h3><p>{e(x["short"])}</p><a class="text-link" href="research.html#{e(x["id"])}">Explore this research area</a></article>' for x in DATA['areas'])
     n = DATA['news']
     return f'''<section class="container home-hero">
-  <div class="hero-copy"><p class="eyebrow">TRACC Lab</p><h1>Translating research<br>into action in<br><span>cancer care.</span></h1><p class="lead">{e(DATA['mission'])}</p><div class="hero-actions"><a class="button" href="research.html">Explore our research</a><a class="text-link" href="people.html">Meet the team</a></div></div>
-  <aside class="evidence-path" aria-label="From evidence to routine care"><p class="eyebrow">Our goal</p><p class="path-intro">Bringing evidence-based cancer screening and supportive care into everyday practice.</p><div class="path-stages"><div class="path-stage"><span aria-hidden="true" class="path-point"></span><h2>Evidence</h2><p>Cancer screening and supportive care recommendations.</p></div><div class="path-stage"><span aria-hidden="true" class="path-point"></span><h2>Implementation</h2><p>Understand context, support decisions, and address barriers.</p></div><div class="path-stage"><span aria-hidden="true" class="path-point"></span><h2>Routine care</h2><p>Help effective care reach people and communities.</p></div></div></aside>
+  <div class="hero-copy"><p class="eyebrow">TRACC Lab</p><h1>Translating research into action in <span>cancer care.</span></h1><p class="lead">{e(DATA['mission'])}</p><div class="hero-actions"><a class="button" href="research.html">Explore our research</a><a class="text-link" href="people.html">Meet the team</a></div></div>
 </section>
 <section class="expertise-section" id="expertise"><div class="container"><div class="section-heading"><p class="eyebrow">What we bring</p><h2>Research expertise</h2></div><div class="expertise-grid">{expertise}</div></div></section>
 <section class="container section"><div class="section-heading heading-with-link"><div><p class="eyebrow">What we study</p><h2>Research areas</h2></div><a class="text-link" href="research.html">Research and current projects</a></div><div class="research-preview-grid">{research}</div></section>
@@ -95,7 +94,7 @@ def research():
 def person(person, pi=False):
     classes = 'person pi-profile' if pi else 'person'
     picture = f'<img class="person-photo" src="{e(person["photo"])}" width="{230 if pi else 144}" height="{300 if pi else 180}" alt="{e(person["name"])}" loading="lazy">' if person.get('photo') else '<div class="person-photo person-photo--empty" aria-hidden="true"></div>'
-    name = e(person['name']) + (f'<span>, {e(person["degree"])}</span>' if person.get('degree') else '')
+    name = e(person['name']) + (f'<span>, {e(person["degree"])}</span>' if pi and person.get('degree') else '')
     level = 'h2' if pi else 'h3'
     links = f'<div class="profile-links"><a class="text-link" href="{e(DATA["scholar"])}" target="_blank" rel="noopener noreferrer">Google Scholar</a><a class="text-link" href="https://www.urmc.rochester.edu/people/112365270-junqiang-zhao" target="_blank" rel="noopener noreferrer">University profile</a></div>' if pi else ''
     return f'<article class="{classes}" id="{e(person["name"].lower().replace(" ", "-"))}">{picture}<div class="person-copy"><p class="person-role">{e(person["role"])}</p><{level}>{name}</{level}>{paragraphs(person["bio"])}{links}</div></article>'
@@ -104,8 +103,12 @@ def person(person, pi=False):
 def people():
     pi = next(p for p in DATA['people'] if p['group'] == 'pi')
     groups = []
-    for group_id, title in [('management', 'Research management'), ('graduate', 'Graduate research assistants'), ('undergraduate', 'Undergraduate research assistant')]:
-        profiles = ''.join(person(p) for p in DATA['people'] if p['group'] == group_id)
+    for group_id, title in [('graduate', 'Graduate research assistants'), ('undergraduate', 'Undergraduate research assistant'), ('management', 'Research management')]:
+        members = sorted(
+            (p for p in DATA['people'] if p['group'] == group_id),
+            key=lambda p: (p['name'].rsplit(' ', 1)[-1].casefold(), p['name'].casefold()),
+        )
+        profiles = ''.join(person(p) for p in members)
         groups.append(f'<section class="people-group" aria-labelledby="{group_id}-heading"><h2 id="{group_id}-heading">{title}</h2>{profiles}</section>')
     return f'''<div class="container page-heading"><p class="eyebrow">TRACC Lab</p><h1>People</h1><p class="page-intro">Our research team brings together expertise in implementation science, decision support, and public health research.</p></div><div class="container people-content">{person(pi, True)}{''.join(groups)}</div><div class="container inline-contact"><h2>Connect with the TRACC team</h2><p>Interested in our research or potential collaborations?</p><a class="button" href="index.html#contact">Get in touch</a></div>'''
 

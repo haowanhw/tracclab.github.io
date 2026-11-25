@@ -19,7 +19,7 @@ python3 tools/build_site.py
 
 The builder uses only the Python standard library and writes the four HTML files. Commit both the content change and regenerated HTML. Appearance is controlled by `styles.css`; `script.js` controls only the mobile navigation. Project descriptions use native HTML details elements and work without JavaScript.
 
-To add a member, use an existing person record in `content/site.json` as a model. Place their portrait in `assets/` and reference its relative path in `photo`. Use `null` to keep an empty portrait area. All current biographies are sourced from the supplied lab documents; the previous fictional placeholder profiles have been removed.
+To add a member, use an existing person record in `content/site.json` as a model. Place their portrait in `assets/` and reference its relative path in `photo`. Use `null` to keep an empty portrait area. Members are alphabetized by surname within each group; the PI remains first and Research management remains last. All current biographies are sourced from the supplied lab documents; the previous fictional placeholder profiles have been removed.
 
 ## Preview and publication
 
@@ -35,9 +35,9 @@ Use a feature branch in the contributor fork and open a pull request against `tr
 
 The redesign uses the supplied `Website content - TRACC Lab.docx` for page content and `Yutong Xu bio and photo.docx` for Yutong's biography and higher-resolution portrait. The Thematic Research Poster Version 2 supplies the lab goal and future directions. The Poster itself and all original Word/PowerPoint/PDF documents are intentionally excluded from the website and repository.
 
-The supplied monochrome lab logo is used for the site identity. Available standalone portraits and the symposium photograph are included. The PI portrait was retained from the existing website. No portraits were inferred by cropping the Poster's group composite.
+The supplied monochrome lab logo is used for the site identity. Available standalone portraits and the symposium photograph are included. The added photo archive supplies Yufei Jia (WeChat image), Jingqiu Zhang (Image 6), and Yousef Ashour (named file). Original portrait files are preserved; display cropping uses CSS. The homepage goal/process sidebar has been removed, leaving a single introduction column. The PI portrait was retained from the existing website. No portraits were inferred by cropping the Poster's group composite.
 
-Zijun Xie's spelling was explicitly confirmed by the requester despite the photo caption's spelling variant. Yutong Xu is described as a PhD student following the dedicated biography; her degree is MS. Grammar corrections include the undergraduate's opening sentence and replacing a conflicting pronoun in Jingqiu Zhang's biography with her name.
+Zijun Xie's spelling was explicitly confirmed by the requester despite the photo caption's spelling variant. At the requester's direction, graduate titles are standardized to Research Assistant · PhD Candidate or Research Assistant · MS Candidate, and only the PI has a degree suffix after the name. Research management follows the student groups. Grammar corrections include the undergraduate's opening sentence and replacing a conflicting pronoun in Jingqiu Zhang's biography with her name.
 
 The older website archive supplied under Downloads could not be read as a ZIP; its file signature indicates a protected container. It was not used.
 
