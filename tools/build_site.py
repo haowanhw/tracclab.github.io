@@ -105,7 +105,11 @@ def people():
     pi = next(p for p in DATA['people'] if p['group'] == 'pi')
     groups = []
     for group_id, title in [('graduate', 'Graduate research assistants'), ('undergraduate', 'Undergraduate research assistant'), ('management', 'Research management')]:
-        profiles = ''.join(person(p) for p in DATA['people'] if p['group'] == group_id)
+        members = sorted(
+            (p for p in DATA['people'] if p['group'] == group_id),
+            key=lambda p: (p['name'].rsplit(' ', 1)[-1].casefold(), p['name'].casefold()),
+        )
+        profiles = ''.join(person(p) for p in members)
         groups.append(f'<section class="people-group" aria-labelledby="{group_id}-heading"><h2 id="{group_id}-heading">{title}</h2>{profiles}</section>')
     return f'''<div class="container page-heading"><p class="eyebrow">TRACC Lab</p><h1>People</h1><p class="page-intro">Our research team brings together expertise in implementation science, decision support, and public health research.</p></div><div class="container people-content">{person(pi, True)}{''.join(groups)}</div><div class="container inline-contact"><h2>Connect with the TRACC team</h2><p>Interested in our research or potential collaborations?</p><a class="button" href="index.html#contact">Get in touch</a></div>'''
 

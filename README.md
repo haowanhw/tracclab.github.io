@@ -19,7 +19,7 @@ python3 tools/build_site.py
 
 The builder uses only the Python standard library and writes the four HTML files. Commit both the content change and regenerated HTML. Appearance is controlled by `styles.css`; `script.js` controls only the mobile navigation. Project descriptions use native HTML details elements and work without JavaScript.
 
-To add a member, use an existing person record in `content/site.json` as a model. Place their portrait in `assets/` and reference its relative path in `photo`. Use `null` to keep an empty portrait area. All current biographies are sourced from the supplied lab documents; the previous fictional placeholder profiles have been removed.
+To add a member, use an existing person record in `content/site.json` as a model. Place their portrait in `assets/` and reference its relative path in `photo`. Use `null` to keep an empty portrait area. Members are alphabetized by surname within each group; the PI remains first and Research management remains last. All current biographies are sourced from the supplied lab documents; the previous fictional placeholder profiles have been removed.
 
 ## Preview and publication
 
