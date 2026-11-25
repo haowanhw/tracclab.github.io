@@ -116,10 +116,13 @@
     {
       "title": "Implementation science",
       "items": [
-        "Select implementation theories, models, and frameworks",
+        "Select and apply implementation theories, models, and frameworks",
         "Design implementation studies, including trials",
-        "Examine implementation barriers",
-        "Determine implementation outcomes"
+        "Identify and assess multilevel implementation barriers and facilitators",
+        "Develop and adapt implementation strategies",
+        "Identify and evaluate implementation mechanisms",
+        "Define and measure implementation outcomes",
+        "Evaluate implementation sustainability and scale-up"
       ]
     },
     {
@@ -135,15 +138,16 @@
       "items": [
         "Realist inquiry",
         "Qualitative studies",
-        "Mixed methods"
+        "Mixed methods",
+        "Systematic review"
       ]
     }
   ],
   "areas": [
     {
       "id": "screening",
-      "title": "Cancer screening",
-      "label": "Implementation research in cancer screening",
+      "title": "Anal cancer screening",
+      "label": "Anal cancer screening",
       "description": "We study strategies to improve the implementation of evidence-based cancer screening and prevention, with a particular focus on anal cancer screening among high-risk populations. Our work addresses barriers to screening, integration into routine clinical care, stigma reduction, and follow-up treatment to improve prevention and early detection.",
       "focus": [
         "Improve screening among high-risk populations",
@@ -154,16 +158,9 @@
       "short": "Anal cancer screening, patient decision support, stigma-responsive strategies, and treatment adherence."
     },
     {
-      "id": "supportive-care",
-      "title": "Supportive cancer care",
-      "label": "Implementation research in supportive cancer care",
-      "description": "We investigate strategies to improve the delivery of evidence-based supportive care in oncology. Our work focuses on improving uptake of genetic counseling and testing in community oncology and implementing serious illness conversations in geriatric oncology to support patient-centered care.",
-      "short": "Genetic counseling and testing in community oncology, and serious illness conversations in geriatric oncology."
-    },
-    {
       "id": "ai",
-      "title": "AI and decision support",
-      "label": "AI and decision support",
+      "title": "AI and cancer screening decision support",
+      "label": "AI and cancer screening decision support",
       "description": "We explore the use of artificial intelligence, predictive modeling, and clinical decision support to advance cancer screening implementation. Our research focuses on organizing implementation evidence, understanding screening behaviors, and developing data-driven tools to inform clinical decisions and implementation strategies.",
       "focus": [
         "Build an AI-assisted, evidence-informed database of cancer screening implementation research",
@@ -173,10 +170,17 @@
     },
     {
       "id": "policy",
-      "title": "Cancer screening policy",
-      "label": "Cancer screening policy",
+      "title": "Cancer screening policy analysis",
+      "label": "Cancer screening policy analysis",
       "description": "We examine how cancer screening policies are implemented across healthcare settings and populations. Using publicly available datasets, we identify implementation gaps, evaluate patterns in screening delivery, and generate evidence to inform policy and improve access to recommended screening services.",
       "short": "Understanding implementation gaps and patterns in screening delivery using publicly available datasets."
+    },
+    {
+      "id": "supportive-care",
+      "title": "Supportive cancer care",
+      "label": "Supportive cancer care",
+      "description": "We investigate strategies to improve the delivery of evidence-based supportive care in oncology. Our work focuses on improving uptake of genetic counseling and testing in community oncology and implementing serious illness conversations in geriatric oncology to support patient-centered care.",
+      "short": "Genetic counseling and testing in community oncology, and serious illness conversations in geriatric oncology."
     }
   ],
   "future": [
