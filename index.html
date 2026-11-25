@@ -1,157 +1,28 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#132f42">
-  <meta name="description" content="TRACC LAB — Implementation science, shared decision making, and cancer control. Led by Junqiang Zhao at the University of Rochester.">
-  <title>TRACC LAB | Evidence into everyday care</title>
-  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="header">
-    <a class="brand" href="#home" aria-label="TRACC LAB home"><img src="assets/mark.svg" alt="" width="38" height="38"><span>TRACC<span class="brand-light"> LAB</span></span></a>
-    <nav aria-label="Main navigation" id="nav"><a href="#research">Research</a><a href="#people">People</a><a href="#publications">Publications</a><a class="nav-contact" href="#contact">Get in touch</a></nav>
-    <button class="menu" aria-expanded="false" aria-controls="nav" aria-label="Open navigation"><span></span><span></span></button>
-  </header>
-  <main id="main">
-    <section class="hero wrap" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">IMPLEMENTATION SCIENCE · CANCER CONTROL</p>
-        <h1>Better evidence.<br>Shared decisions.<br><em>Real-world impact.</em></h1>
-        <p class="hero-intro">Connecting research, people, and practice to help better care become everyday care.</p>
-        <div class="hero-actions"><a class="button" href="#research">Explore our research</a><a class="text-link" href="#people">Meet the principal investigator</a></div>
-        <p class="affiliation">University of Rochester <span> / </span> Cancer Control</p>
-      </div>
-      <div class="hero-art">
-        <div class="art-top"><span>THE SCIENCE OF MAKING IT WORK</span><svg class="tiny-mark" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M3 12h18M12 3v18M5.64 5.64l12.72 12.72M18.36 5.64 5.64 18.36"/></svg></div>
-        <svg class="network" viewBox="0 0 520 500" role="img" aria-labelledby="network-title network-desc">
-          <title id="network-title">Connecting evidence, people, and practice</title><desc id="network-desc">An illustrative network connects research evidence with people and clinical practice through a continuous loop.</desc>
-          <defs><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#496274" opacity=".45"/></pattern><linearGradient id="loop" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8de2cb"/><stop offset="1" stop-color="#428fa5"/></linearGradient></defs>
-          <rect width="520" height="500" fill="url(#grid)"/>
-          <g stroke="#55717e" fill="none" stroke-width="1"><circle cx="260" cy="244" r="157" stroke-dasharray="3 8"/><circle cx="260" cy="244" r="201" opacity=".5"/><path d="M76 310L190 134 390 198 337 387 76 310 390 198M190 134L337 387" opacity=".6"/></g>
-          <path class="orbit" d="M260 86C360 86 425 200 397 287S271 430 181 371 84 212 150 146 220 86 260 86Z" fill="none" stroke="url(#loop)" stroke-width="2"/>
-          <path d="M190 134Q265 244 390 198M390 198Q263 243 239 355M239 355Q264 240 190 134" fill="none" stroke="#7bd1bc" stroke-width="1.5"/>
-          <g fill="#7ed5c0"><circle cx="76" cy="310" r="4"/><circle cx="337" cy="387" r="4"/><circle cx="390" cy="198" r="5"/><circle cx="190" cy="134" r="5"/><circle cx="426" cy="328" r="3"/><circle cx="111" cy="115" r="3"/></g>
-          <g class="core"><circle cx="260" cy="244" r="67" fill="#173d4b" stroke="#76c6b5" stroke-opacity=".4"/><circle cx="260" cy="244" r="52" fill="#8ddbc5"/><path d="M235 244h50m-25-25v50m-18-43 36 36m0-36-36 36" stroke="#163c44" stroke-width="2.5"/></g>
-          <g fill="#143042" stroke="#547b87"><rect x="116" y="85" width="144" height="49" rx="24"/><rect x="330" y="187" width="119" height="49" rx="24"/><rect x="166" y="349" width="144" height="49" rx="24"/></g>
-          <g fill="#eaf4f4" font-family="Arial,sans-serif" font-size="16" text-anchor="middle"><text x="188" y="115">Evidence</text><text x="389" y="217">People</text><text x="238" y="379">Practice</text></g>
-          <circle class="traveler" cx="400" cy="280" r="6" fill="#d4ed8e"/>
-        </svg>
-        <div class="art-bottom"><span>From discovery to delivery.</span><span>Built around people.</span></div>
-      </div>
-    </section>
-    <div class="focus-strip"><div class="wrap strip-inner"><span>OUR FOCUS</span><p>Evidence that travels.<span>Decisions that reflect people.</span>Care that works in context.</p></div></div>
-    <section class="section wrap" id="research">
-      <div class="section-head"><div><p class="eyebrow">OUR RESEARCH</p><h2>Closing the gap between<br>what we know and what we do.</h2></div><p>Our research interests connect implementation science with the decisions and systems that shape care.</p></div>
-      <div class="research-grid">
-        <div class="research-tabs" role="tablist" aria-label="Research areas" aria-orientation="vertical">
-          <button role="tab" id="tab-implementation" aria-selected="true" aria-controls="research-panel" data-area="implementation"><span class="tab-icon" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M3 12h18M12 3v18M5.64 5.64l12.72 12.72M18.36 5.64 5.64 18.36"/></svg></span>Implementation science<span class="tab-plus">−</span></button>
-          <button role="tab" id="tab-decisions" aria-selected="false" aria-controls="research-panel" tabindex="-1" data-area="decisions"><span class="tab-icon">◎</span>Shared decision making<span class="tab-plus">+</span></button>
-          <button role="tab" id="tab-cancer" aria-selected="false" aria-controls="research-panel" tabindex="-1" data-area="cancer"><span class="tab-icon">⌁</span>Cancer screening & care<span class="tab-plus">+</span></button>
-          <button role="tab" id="tab-methods" aria-selected="false" aria-controls="research-panel" tabindex="-1" data-area="methods"><span class="tab-icon">⊞</span>Methods & complexity<span class="tab-plus">+</span></button>
-        </div>
-        <div class="research-panel" id="research-panel" role="tabpanel" aria-labelledby="tab-implementation" tabindex="0">
-          <div class="panel-art" aria-hidden="true"><span></span><span></span><span></span><span></span><i></i></div>
-          <p class="eyebrow" id="area-label">EVIDENCE INTO PRACTICE</p><h3 id="area-title">What helps better care<br>take root?</h3><p id="area-description">Exploring how evidence becomes part of routine care, with attention to behavior, local context, and the systems in which change happens.</p><div class="tags" id="area-tags"><span>Behavioral science</span><span>Implementation theory</span></div>
-        </div>
-      </div>
-    </section>
-    <section id="people" aria-label="People">
-    <div class="people-section"><div class="wrap people-grid">
-      <div class="portrait"><img src="assets/junqiang-zhao.jpg" alt="Junqiang Zhao" width="400" height="500" loading="lazy"><span>PRINCIPAL INVESTIGATOR</span></div>
-      <div class="people-copy"><p class="eyebrow">MEET THE PI</p><h2>Junqiang Zhao<span>, PhD</span></h2><p class="role">Assistant Professor · Cancer Control<br>Department of Surgery, University of Rochester</p><p>Dr. Zhao studies how research can inform care and how people can participate in decisions about their health. His work brings together implementation science, behavioral perspectives, and realist and mixed methods.</p><p>He joined Rochester in July 2025, following roles at the University of Toronto and Waypoint Research Institute. He earned his doctorate in nursing at the University of Ottawa.</p><div class="people-links"><a class="text-link" href="https://www.urmc.rochester.edu/people/112365270-junqiang-zhao" target="_blank" rel="noopener noreferrer">University profile</a><a class="text-link" href="https://scholar.google.com/citations?hl=en&user=jrsInP4AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></div></div>
-    </div></div>
-    <section class="section wrap team-section" id="team" aria-labelledby="team-heading">
-      <h2 class="team-heading" id="team-heading">OUR TEAM</h2>
-      <!-- Sample names and fictional biographies are for layout only. Replace with confirmed member details. -->
-      <div class="team-groups">
-        <section class="team-group" aria-labelledby="postdocs-heading">
-          <h3 id="postdocs-heading">Postdoctoral Fellows</h3>
-          <div class="team-members">
-            <article class="team-member">
-              <div class="team-photo" aria-hidden="true"></div>
-              <div class="team-member-content">
-                <h4>FirstName LastName</h4>
-                <p>FirstName earned a PhD in public health at University Name. Their research interests include implementation science and cancer screening. Outside the lab, they enjoy hiking and exploring new coffee spots.</p>
-              </div>
-            </article>
-          </div>
-        </section>
-        <section class="team-group" aria-labelledby="graduate-heading">
-          <h3 id="graduate-heading">Graduate Students</h3>
-          <div class="team-members">
-            <article class="team-member">
-              <div class="team-photo" aria-hidden="true"></div>
-              <div class="team-member-content">
-                <h4>FirstName LastName</h4>
-                <p>FirstName completed a master's degree in nursing at University Name. Their research interests include shared decision making and patient-centered care. In their free time, they enjoy baking and visiting art museums.</p>
-              </div>
-            </article>
-            <article class="team-member">
-              <div class="team-photo" aria-hidden="true"></div>
-              <div class="team-member-content">
-                <h4>FirstName LastName</h4>
-                <p>FirstName earned a bachelor's degree in psychology at University Name. Their research interests include health behavior and decision support. Outside of research, they enjoy running and playing the piano.</p>
-              </div>
-            </article>
-            <article class="team-member">
-              <div class="team-photo" aria-hidden="true"></div>
-              <div class="team-member-content">
-                <h4>FirstName LastName</h4>
-                <p>FirstName completed a master's degree in epidemiology at University Name. Their research interests include mixed methods and access to cancer screening. They enjoy photography and trying recipes from around the world.</p>
-              </div>
-            </article>
-          </div>
-        </section>
-        <section class="team-group" aria-labelledby="undergraduate-heading">
-          <h3 id="undergraduate-heading">Undergraduate Students</h3>
-          <div class="team-members">
-            <article class="team-member">
-              <div class="team-photo" aria-hidden="true"></div>
-              <div class="team-member-content">
-                <h4>FirstName LastName</h4>
-                <p>FirstName is pursuing a bachelor's degree in public health at University Name. They are interested in cancer prevention and community health research. Outside class, they enjoy swimming and volunteering in the community.</p>
-              </div>
-            </article>
-            <article class="team-member">
-              <div class="team-photo" aria-hidden="true"></div>
-              <div class="team-member-content">
-                <h4>FirstName LastName</h4>
-                <p>FirstName is pursuing a bachelor's degree in psychology at University Name. They are interested in how people make health decisions and engage with research. They enjoy reading fiction and playing badminton.</p>
-              </div>
-            </article>
-          </div>
-        </section>
-        <section class="team-group" aria-labelledby="staff-heading">
-          <h3 id="staff-heading">Administrative Staff</h3>
-          <div class="team-members">
-            <article class="team-member">
-              <div class="team-photo" aria-hidden="true"></div>
-              <div class="team-member-content">
-                <h4>FirstName LastName</h4>
-                <p>FirstName earned a bachelor's degree in communications at University Name. They support lab coordination, scheduling, and research operations. Outside work, they enjoy gardening and discovering new places to travel.</p>
-              </div>
-            </article>
-          </div>
-        </section>
-      </div>
-    </section>
-    </section>
-    <section class="section wrap publications" id="publications">
-      <div class="section-head"><div><p class="eyebrow">SELECTED SCHOLARSHIP</p><h2>Ideas in print.</h2></div><a class="text-link" href="https://scholar.google.com/citations?hl=en&user=jrsInP4AAAAJ" target="_blank" rel="noopener noreferrer">View full publication record</a></div>
-      <div class="filters" role="group" aria-label="Filter publications"><button class="active" aria-pressed="true" data-filter="all">All topics</button><button aria-pressed="false" data-filter="implementation">Implementation science</button><button aria-pressed="false" data-filter="decisions">Shared decision making</button></div>
-      <div id="publication-list">
-        <article class="publication" data-topic="implementation"><span class="year">2025</span><div><p class="journal">SYSTEMATIC REVIEWS · PROTOCOL</p><h3><a href="https://pubmed.ncbi.nlm.nih.gov/40022142/" target="_blank" rel="noopener noreferrer">Research priority setting for implementation science and practice: a living systematic review protocol.</a></h3><p class="authors">Zhao J, Chen W, Bai W, et al.</p></div><a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/40022142/" target="_blank" rel="noopener noreferrer" aria-label="Read implementation science review protocol on PubMed">Read paper</a></article>
-        <article class="publication" data-topic="decisions"><span class="year">2025</span><div><p class="journal">JOURNAL OF MEDICAL INTERNET RESEARCH · REVIEW</p><h3><a href="https://pubmed.ncbi.nlm.nih.gov/40549433/" target="_blank" rel="noopener noreferrer">Digital Decision Aids to Support Decision-Making in Palliative and End-of-Life Dementia Care: Systematic Review and Meta-Analysis.</a></h3><p class="authors">Zhong J, Liang W, Wang T, et al., including Zhao J</p></div><a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/40549433/" target="_blank" rel="noopener noreferrer" aria-label="Read digital decision aids review on PubMed">Read paper</a></article>
-        <article class="publication" data-topic="decisions"><span class="year">2024</span><div><p class="journal">THE LANCET PSYCHIATRY · COMMENT</p><h3><a href="https://pubmed.ncbi.nlm.nih.gov/38697178/" target="_blank" rel="noopener noreferrer">Nurse prescribers as key players in shared decision making in psychiatry.</a></h3><p class="authors">Zhao J, Aoki Y, Zisman-Ilani Y</p></div><a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/38697178/" target="_blank" rel="noopener noreferrer" aria-label="Read nurse prescribers comment on PubMed">Read paper</a></article>
-      </div><p class="result-count" aria-live="polite">Showing 3 selected publications</p>
-    </section>
-    <section class="contact-section" id="contact"><div class="wrap contact-grid"><div><p class="eyebrow">LET’S CONNECT</p><h2>Better questions.<br>Shared possibilities.</h2></div><div><p>Interested in implementation science, decision making, cancer screening, prehabilitation, or realist research? Get in touch to explore a collaboration.</p><a class="button light" href="mailto:junqiang_zhao@urmc.rochester.edu">Contact Dr. Zhao</a><a class="email" href="mailto:junqiang_zhao@urmc.rochester.edu">junqiang_zhao@urmc.rochester.edu</a></div></div></section>
-  </main>
-  <footer class="wrap footer"><a class="brand" href="#home"><img src="assets/mark.svg" alt="" width="30" height="30"><span>TRACC<span class="brand-light"> LAB</span></span></a><p>University of Rochester · Rochester, New York</p><a href="https://www.urmc.rochester.edu/people/112365270-junqiang-zhao" target="_blank" rel="noopener noreferrer">Faculty directory</a></footer>
-</body>
-</html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b3157"><meta name="description" content="The TRACC Lab advances the implementation of evidence-based cancer screening and supportive care in real-world clinical settings. Our goal is to help ensure that effective cancer care reaches the people and communities who need it.">
+<meta property="og:title" content="TRACC Lab | Translating Research into Action in Cancer Care"><meta property="og:description" content="The TRACC Lab advances the implementation of evidence-based cancer screening and supportive care in real-world clinical settings. Our goal is to help ensure that effective cancer care reaches the people and communities who need it."><meta property="og:type" content="website">
+<title>TRACC Lab | Translating Research into Action in Cancer Care</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+</head><body><a class="skip" href="#main">Skip to content</a>
+<div class="institution-bar"><div class="container"><span>University of Rochester</span><span>Supportive Care in Cancer</span></div></div>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="index.html" aria-label="TRACC Lab home"><img src="assets/tracc-logo.png" width="2172" height="724" alt="TRACC Lab — Translating Research into Action in Cancer Care"></a>
+  <nav id="site-nav" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="research.html">Research</a><a href="people.html">People</a><a href="news.html">News</a><a class="nav-contact" href="index.html#contact">Contact</a></nav>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+</div></header><main id="main"><section class="container home-hero">
+  <div class="hero-copy"><p class="eyebrow">TRACC Lab</p><h1>Translating research<br>into action in<br><span>cancer care.</span></h1><p class="lead">The TRACC Lab advances the implementation of evidence-based cancer screening and supportive care in real-world clinical settings. Our goal is to help ensure that effective cancer care reaches the people and communities who need it.</p><div class="hero-actions"><a class="button" href="research.html">Explore our research</a><a class="text-link" href="people.html">Meet the team</a></div></div>
+  <aside class="evidence-path" aria-label="From evidence to routine care"><p class="eyebrow">Our goal</p><p class="path-intro">Bringing evidence-based cancer screening and supportive care into everyday practice.</p><div class="path-stages"><div class="path-stage"><span aria-hidden="true" class="path-point"></span><h2>Evidence</h2><p>Cancer screening and supportive care recommendations.</p></div><div class="path-stage"><span aria-hidden="true" class="path-point"></span><h2>Implementation</h2><p>Understand context, support decisions, and address barriers.</p></div><div class="path-stage"><span aria-hidden="true" class="path-point"></span><h2>Routine care</h2><p>Help effective care reach people and communities.</p></div></div></aside>
+</section>
+<section class="expertise-section" id="expertise"><div class="container"><div class="section-heading"><p class="eyebrow">What we bring</p><h2>Research expertise</h2></div><div class="expertise-grid"><article class="expertise-item"><h3>Implementation science</h3><ul><li>Select implementation theories, models, and frameworks</li><li>Design implementation studies, including trials</li><li>Examine implementation barriers</li><li>Determine implementation outcomes</li></ul></article><article class="expertise-item"><h3>Patient decision support</h3><ul><li>Assess patient decisional needs</li><li>Develop patient decision aids</li><li>Evaluate decision support outcomes</li></ul></article><article class="expertise-item"><h3>Research methods</h3><ul><li>Realist inquiry</li><li>Qualitative studies</li><li>Mixed methods</li></ul></article></div></div></section>
+<section class="container section"><div class="section-heading heading-with-link"><div><p class="eyebrow">What we study</p><h2>Research areas</h2></div><a class="text-link" href="research.html">Research and current projects</a></div><div class="research-preview-grid"><article class="research-preview"><h3><a href="research.html#screening">Cancer screening</a></h3><p>Anal cancer screening, patient decision support, stigma-responsive strategies, and treatment adherence.</p><a class="text-link" href="research.html#screening">Explore this research area</a></article><article class="research-preview"><h3><a href="research.html#supportive-care">Supportive cancer care</a></h3><p>Genetic counseling and testing in community oncology, and serious illness conversations in geriatric oncology.</p><a class="text-link" href="research.html#supportive-care">Explore this research area</a></article><article class="research-preview"><h3><a href="research.html#ai">AI and decision support</a></h3><p>A living implementation knowledge base, predictive modeling, and tools to support evidence-informed decisions.</p><a class="text-link" href="research.html#ai">Explore this research area</a></article><article class="research-preview"><h3><a href="research.html#policy">Cancer screening policy</a></h3><p>Understanding implementation gaps and patterns in screening delivery using publicly available datasets.</p><a class="text-link" href="research.html#policy">Explore this research area</a></article></div></section>
+<section class="news-band"><div class="container news-feature"><a class="news-image-link" href="news.html#surgery-symposium-2026" aria-label="Read about Yufei Jia’s symposium presentation"><img src="assets/yufei-symposium-2026.jpg" width="503" height="670" alt="Yufei Jia presenting research at the Department of Surgery Scientific Symposium" loading="lazy"></a><div><p class="eyebrow">Lab news · 2026</p><h2><a href="news.html#surgery-symposium-2026">Yufei Jia presents at the Department of Surgery Scientific Symposium 2026</a></h2><a class="text-link" href="news.html#surgery-symposium-2026">Read the news</a></div></div></section>
+<section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="container contact-inner">
+<div><p class="eyebrow">Contact us</p><h2 id="contact-heading">Let’s translate evidence<br>into practice, together.</h2></div>
+<div><p>Interested in our work, have a general question, or want to partner with the TRACC Lab?</p><p>For implementation research questions and collaboration opportunities, contact our principal investigator.</p><p class="contact-name">Junqiang Zhao, PhD</p><a class="email-link" href="mailto:junqiang_zhao@urmc.rochester.edu">junqiang_zhao@urmc.rochester.edu</a></div>
+</div></section></main><footer class="site-footer"><div class="container footer-grid">
+  <div><p class="footer-name">TRACC Lab</p><p>Translating Research into Action in Cancer Care</p></div>
+  <div><p>Supportive Care in Cancer<br>Department of Surgery<br>University of Rochester Medical Center</p></div>
+  <div><p>Rochester, New York</p><a href="mailto:junqiang_zhao@urmc.rochester.edu">junqiang_zhao@urmc.rochester.edu</a><a class="footer-scholar" href="https://scholar.google.com/citations?user=jrsInP4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></div>
+</div><div class="container footer-bottom"><span>TRACC Lab · University of Rochester</span><a href="index.html#contact">Contact the lab</a></div></footer></body></html>

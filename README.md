@@ -1,43 +1,44 @@
-# TRACC LAB
+# TRACC Lab website
 
-Research lab website for Junqiang Zhao at the University of Rochester.
+A static, responsive research lab website for the University of Rochester TRACC Lab — Translating Research into Action in Cancer Care.
 
-## Publish on GitHub Pages
+## Pages
 
-1. Sign in to GitHub as `tracclab`.
-2. Create a public repository named `tracclab.github.io`.
-3. Upload the contents of this folder to the repository root, including `index.html`, `styles.css`, `script.js`, and the `assets` folder. Do not upload the ZIP file itself or put everything inside an extra enclosing folder.
-4. Open **Settings > Pages**. Select **Deploy from a branch**, choose **main** and **/(root)**, then save.
-5. When deployment completes, the website will be available at https://tracclab.github.io/.
+- `index.html`: mission, expertise, research overview, news, and contact.
+- `research.html`: four research areas, current projects with expandable full descriptions, and future directions.
+- `people.html`: principal investigator and research team biographies.
+- `news.html`: lab news and the supplied symposium photograph.
 
-## Update content
+## Editing
 
-- `index.html`: biography, publications, links, and page content.
-- `styles.css`: colors, typography, and layout.
-- `script.js`: research panel content and publication filtering.
-- `assets/`: portrait and proposed visual mark.
+Edit `content/site.json`, then run:
 
-There are no dependencies or build steps. To preview locally, run `python3 -m http.server 4173` in this folder.
-
-## Team profiles
-
-People includes the PI biography followed by Our Team. Each role has its own row: 1 Postdoctoral Fellow, 3 Graduate Students, 2 Undergraduate Students, and 1 Administrative Staff profile. All names are `FirstName LastName`, and portrait areas are deliberately empty.
-
-The educational histories, interests, and hobbies are fictional layout samples. `University Name` is a placeholder institution. Replace these sample biographies with verified member information.
-
-To update a profile, edit the name and paragraph inside its `team-member-content` element in `index.html`. When a portrait is available, add it to `assets/` and replace the blank `div.team-photo` with:
-
-```html
-<img class="team-photo" src="assets/member-name.jpg" alt="FirstName LastName" width="144" height="180" loading="lazy">
+```sh
+python3 tools/build_site.py
 ```
 
-Duplicate a `team-member` article within the relevant `team-members` container to add more members. Names, biographies, and portraits are static HTML; no JavaScript change is needed.
+The builder uses only the Python standard library and writes the four HTML files. Commit both the content change and regenerated HTML. Appearance is controlled by `styles.css`; `script.js` controls only the mobile navigation. Project descriptions use native HTML details elements and work without JavaScript.
 
-## Content sources
+To add a member, use an existing person record in `content/site.json` as a model. Place their portrait in `assets/` and reference its relative path in `photo`. Use `null` to keep an empty portrait area. All current biographies are sourced from the supplied lab documents; the previous fictional placeholder profiles have been removed.
 
-- https://www.urmc.rochester.edu/people/112365270-junqiang-zhao
-- https://pubmed.ncbi.nlm.nih.gov/40022142/
-- https://pubmed.ncbi.nlm.nih.gov/40549433/
-- https://pubmed.ncbi.nlm.nih.gov/38697178/
+## Preview and publication
 
-The lab name was supplied by the site requester. Its acronym has not been expanded. The headline, research framing, and SVG mark are proposed website copy and design. The Team section contains explicitly requested placeholder names, fictional biographies, and empty portrait areas; it does not identify actual members. No funded projects or open positions have been invented. Selected publications are not a complete publication list. Contact uses an email link.
+```sh
+python3 -m http.server 4186
+```
+
+Open http://localhost:4186/. GitHub Pages publishes the repository root from `main`. This site needs no dependency installation, build service, framework, or server backend. The contact action opens the visitor's email application.
+
+Use a feature branch in the contributor fork and open a pull request against `tracclab/tracclab.github.io:main`. Merging the pull request updates the published website.
+
+## Content provenance
+
+The redesign uses the supplied `Website content - TRACC Lab.docx` for page content and `Yutong Xu bio and photo.docx` for Yutong's biography and higher-resolution portrait. The Thematic Research Poster Version 2 supplies the lab goal and future directions. The Poster itself and all original Word/PowerPoint/PDF documents are intentionally excluded from the website and repository.
+
+The supplied monochrome lab logo is used for the site identity. Available standalone portraits and the symposium photograph are included. The PI portrait was retained from the existing website. No portraits were inferred by cropping the Poster's group composite.
+
+Zijun Xie's spelling was explicitly confirmed by the requester despite the photo caption's spelling variant. Yutong Xu is described as a PhD student following the dedicated biography; her degree is MS. Grammar corrections include the undergraduate's opening sentence and replacing a conflicting pronoun in Jingqiu Zhang's biography with her name.
+
+The older website archive supplied under Downloads could not be read as a ZIP; its file signature indicates a protected container. It was not used.
+
+No project findings, recruitment openings, funding awards, or news dates beyond the supplied year have been invented. Previous selected-publication content has been replaced by the supplied current research material; the PI's full publication record remains linked through Google Scholar. The knowledge-base project links to its supplied publication URL.
