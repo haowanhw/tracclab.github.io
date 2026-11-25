@@ -37,7 +37,7 @@ The redesign uses the supplied `Website content - TRACC Lab.docx` for page conte
 
 The supplied monochrome lab logo is used for the site identity. Available standalone portraits and the symposium photograph are included. The PI portrait was retained from the existing website. No portraits were inferred by cropping the Poster's group composite.
 
-Zijun Xie's spelling was explicitly confirmed by the requester despite the photo caption's spelling variant. Yutong Xu is described as a PhD student following the dedicated biography; her degree is MS. Grammar corrections include the undergraduate's opening sentence and replacing a conflicting pronoun in Jingqiu Zhang's biography with her name.
+Zijun Xie's spelling was explicitly confirmed by the requester despite the photo caption's spelling variant. At the requester's direction, graduate titles are standardized to Research Assistant · PhD Candidate or Research Assistant · MS Candidate, and only the PI has a degree suffix after the name. Research management follows the student groups. Grammar corrections include the undergraduate's opening sentence and replacing a conflicting pronoun in Jingqiu Zhang's biography with her name.
 
 The older website archive supplied under Downloads could not be read as a ZIP; its file signature indicates a protected container. It was not used.
 

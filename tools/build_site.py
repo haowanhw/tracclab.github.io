@@ -95,7 +95,7 @@ def research():
 def person(person, pi=False):
     classes = 'person pi-profile' if pi else 'person'
     picture = f'<img class="person-photo" src="{e(person["photo"])}" width="{230 if pi else 144}" height="{300 if pi else 180}" alt="{e(person["name"])}" loading="lazy">' if person.get('photo') else '<div class="person-photo person-photo--empty" aria-hidden="true"></div>'
-    name = e(person['name']) + (f'<span>, {e(person["degree"])}</span>' if person.get('degree') else '')
+    name = e(person['name']) + (f'<span>, {e(person["degree"])}</span>' if pi and person.get('degree') else '')
     level = 'h2' if pi else 'h3'
     links = f'<div class="profile-links"><a class="text-link" href="{e(DATA["scholar"])}" target="_blank" rel="noopener noreferrer">Google Scholar</a><a class="text-link" href="https://www.urmc.rochester.edu/people/112365270-junqiang-zhao" target="_blank" rel="noopener noreferrer">University profile</a></div>' if pi else ''
     return f'<article class="{classes}" id="{e(person["name"].lower().replace(" ", "-"))}">{picture}<div class="person-copy"><p class="person-role">{e(person["role"])}</p><{level}>{name}</{level}>{paragraphs(person["bio"])}{links}</div></article>'
@@ -104,7 +104,7 @@ def person(person, pi=False):
 def people():
     pi = next(p for p in DATA['people'] if p['group'] == 'pi')
     groups = []
-    for group_id, title in [('management', 'Research management'), ('graduate', 'Graduate research assistants'), ('undergraduate', 'Undergraduate research assistant')]:
+    for group_id, title in [('graduate', 'Graduate research assistants'), ('undergraduate', 'Undergraduate research assistant'), ('management', 'Research management')]:
         profiles = ''.join(person(p) for p in DATA['people'] if p['group'] == group_id)
         groups.append(f'<section class="people-group" aria-labelledby="{group_id}-heading"><h2 id="{group_id}-heading">{title}</h2>{profiles}</section>')
     return f'''<div class="container page-heading"><p class="eyebrow">TRACC Lab</p><h1>People</h1><p class="page-intro">Our research team brings together expertise in implementation science, decision support, and public health research.</p></div><div class="container people-content">{person(pi, True)}{''.join(groups)}</div><div class="container inline-contact"><h2>Connect with the TRACC team</h2><p>Interested in our research or potential collaborations?</p><a class="button" href="index.html#contact">Get in touch</a></div>'''
